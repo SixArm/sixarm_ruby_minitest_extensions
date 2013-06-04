@@ -13,14 +13,12 @@ Assert:
 
    * assert_true
    * assert_false
-   * assert_nil  
    * assert_respond_to_all
 
 Spec:
 
    * must_be_true
    * must_be_false
-   * must_be_nil  
    * must_respond_to_all
 
 Based on Minitest.
@@ -38,7 +36,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_minitest_extensions", "~>1.0.0"	
+    gem "sixarm_ruby_minitest_extensions", "~>1.0.2"	
 
 Require:
 
@@ -81,6 +79,7 @@ Example Minitest spec:
 
 ## Changes
 
+* 2013-06-04 1.0.2 Update to enable "Minitest" vs. "MiniTest"
 * 2013-06-03 1.0.1 Update for Minitest 5.x
 * 2013-06-02 1.0.0 Publish
 

@@ -3,10 +3,7 @@
 Please see README
 =end
 
-require 'minitest/autorun'
-
 module Minitest::Assertions
-puts "Minitest::Assertions"
 
   ##
   # Fails unless +exp+ is true.
