@@ -63,7 +63,7 @@ Example Minitest spec:
     describe Foo do
       it "validates" do
         f = Foo.new
-	f.valid?.must_be_true
+        f.valid?.must_be_true
       end
     end
 
@@ -72,7 +72,7 @@ Example Minitest spec:
     describe Foo do
       it "is colorful" do
         f = Foo.new
-	f.must_respond_to_all [:red, :green, :blue]
+        f.must_respond_to_all [:red, :green, :blue]
       end
     end
 
