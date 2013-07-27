@@ -22,7 +22,7 @@ module Minitest::Assertions
   ##
   # Succeeds when +obj+ exists, i.e. is not nil.
 
-  def assert_exist obj, msg
+  def assert_exist obj, msg = nil
     refute_nil obj, msg
   end
 
