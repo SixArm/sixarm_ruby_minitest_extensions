@@ -33,9 +33,7 @@ module Minitest::Assertions
   # regardless of ordering of the items.
 
   def assert_equal_items items_1, items_2, msg = nil
-    hashes_1 = items_1.map{|item| item.hash}.sort
-    hashes_2 = items_2.map{|item| item.hash}.sort
-    assert_equal hashes_1, hashes_2, msg
+    assert_equal items_1.sort_by(&:hash), items_2.sort_by(&:hash), msg
   end
 
 end
