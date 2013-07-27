@@ -14,12 +14,14 @@ Assert:
    * assert_true
    * assert_false
    * assert_respond_to_all
+   * assert_equal_items
 
 Spec:
 
    * must_be_true
    * must_be_false
    * must_respond_to_all
+   * must_have_equal_items
 
 Based on Minitest.
 
@@ -36,7 +38,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_minitest_extensions", "~>1.0.2"	
+    gem "sixarm_ruby_minitest_extensions", "~>1.0.3"	
 
 Require:
 
@@ -79,6 +81,7 @@ Example Minitest spec:
 
 ## Changes
 
+* 2013-07-26 1.0.3 Add #assert_equal_items
 * 2013-06-04 1.0.2 Update to enable "Minitest" vs. "MiniTest"
 * 2013-06-03 1.0.1 Update for Minitest 5.x
 * 2013-06-02 1.0.0 Publish

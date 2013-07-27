@@ -50,6 +50,24 @@ describe "Minitest" do
 
     end
 
+    describe "#assert_equal_items" do
+
+      describe "smoke test with some items" do
+        
+        it "works" do
+          assert_equal_items([:a, :b], [:b, :a])
+        end
+
+        it "fails" do
+          proc { 
+            assert_equal_items([:a, :b], [:a, :z])
+          }.must_raise MiniTest::Assertion
+        end
+
+      end
+
+    end
+
   end
 
 end

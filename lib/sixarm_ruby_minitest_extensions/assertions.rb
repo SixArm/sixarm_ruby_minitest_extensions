@@ -28,4 +28,14 @@ module Minitest::Assertions
     }
   end
 
+  ##
+  # Succeeds when +items_1+ and +items_2+ have all equal items,
+  # regardless of ordering of the items.
+
+  def assert_equal_items items_1, items_2, msg = nil
+    hashes_1 = items_1.map{|item| item.hash}.sort
+    hashes_2 = items_2.map{|item| item.hash}.sort
+    assert_equal hashes_1, hashes_2, msg
+  end
+
 end
