@@ -32,6 +32,28 @@ describe "Minitest" do
 
     end
 
+    describe "#must_exist" do
+
+      specify "true #=> success" do
+        true.must_exisit
+      end
+
+      specify "false #=> success" do
+        false.must_exisit
+      end
+
+      specify "0 #=> success" do
+        false.must_exisit
+      end
+
+      specify "nil #=> failure" do
+        proc {
+          nil.must_exisit
+        }.must_raise MiniTest::Assertion
+      end
+
+    end
+
     describe "#must_respond_to_all" do
 
       describe "smoke test with some string methods" do

@@ -20,6 +20,13 @@ module Minitest::Assertions
   end
 
   ##
+  # Succeeds when +obj+ exists, i.e. is not nil.
+
+  def assert_exist obj, msg
+    refute_nil obj, msg
+  end
+
+  ##
   # Succeeds when +obj+ responds to each method in +meths+.
 
   def assert_respond_to_all obj, meths, msg = nil

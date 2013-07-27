@@ -32,6 +32,28 @@ describe "Minitest" do
 
     end
 
+    describe "#assert_exit" do
+
+      specify "true #=> success" do
+        assert_exist(true).must_be_same_as true
+      end
+
+      specify "false #=> success" do
+        assert_exist(false).must_be_same_as true
+      end
+
+      specify "0 #=> success" do
+        assert_exist(0).must_be_same_as true
+      end
+
+      specify "nil #=> failure" do
+        proc { 
+          assert_exist(nil)
+        }.must_raise MiniTest::Assertion
+      end
+
+    end
+
     describe "#assert_respond_to_all" do
 
       describe "smoke test with some string methods" do
