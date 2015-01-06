@@ -55,7 +55,7 @@ To enable high security for all our gems:
 
 To install with high security:
 
-    gem install sixarm_ruby_minitest_extensions --test --trust-policy HighSecurity
+    gem install sixarm_ruby_minitest_extensions --trust-policy HighSecurity
 
 
 ## Examples
