@@ -1,4 +1,4 @@
-# Ruby » <br> Minitest Extensions
+SixArm.com → Ruby → <br> Minitest Extensions
 
 * Doc: <http://sixarm.com/sixarm_ruby_minitest_extensions/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_minitest_extensions>
