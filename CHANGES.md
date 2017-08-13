@@ -1,5 +1,6 @@
 # Changes
 
+* 2017-08-13 1.0.7 Update to Ruby 2.4, spdx licenses, rake test, etc.
 * 2015-07-07 1.0.6 Update gemspec to use file manifest
 * 2013-07-27 1.0.4 Add #assert_exist and #must_exist
 * 2013-07-26 1.0.3 Add #assert_equal_items and #must_have_equal_items

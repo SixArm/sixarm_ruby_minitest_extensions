@@ -7,7 +7,7 @@ describe "Minitest" do
     describe "#assert_true" do
 
       specify "true #=> success" do
-        assert_true(true).must_be_same_as true
+        assert_true(true)
       end
 
       specify "truthy but not true #=> failure" do
@@ -21,7 +21,7 @@ describe "Minitest" do
     describe "#assert_false" do
 
       specify "false #=> success" do
-        assert_false(false).must_be_same_as true
+        assert_false(false)
       end
 
       specify "falsey but not false #=> failure" do
@@ -32,18 +32,18 @@ describe "Minitest" do
 
     end
 
-    describe "#assert_exit" do
+    describe "#assert_exist" do
 
       specify "true #=> success" do
-        assert_exist(true).must_be_same_as true
+        assert_exist(true)
       end
 
       specify "false #=> success" do
-        assert_exist(false).must_be_same_as true
+        assert_exist("hello")
       end
 
       specify "0 #=> success" do
-        assert_exist(0).must_be_same_as true
+        assert_exist(0)
       end
 
       specify "nil #=> failure" do
