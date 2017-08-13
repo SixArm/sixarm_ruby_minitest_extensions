@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_minitest_extensions"
-  s.summary        = "SixArm.com » Ruby » Minitest extensions"
+  s.summary        = "SixArm.com → Ruby → Minitest extensions"
   s.description    = "A few simple Minitest assertions and expectations"
   s.version        = "1.0.6"
 
