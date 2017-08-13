@@ -35,20 +35,20 @@ describe "Minitest" do
     describe "#must_exist" do
 
       specify "true #=> success" do
-        true.must_exisit
+        true.must_exist
       end
 
       specify "false #=> success" do
-        false.must_exisit
+        false.must_exist
       end
 
       specify "0 #=> success" do
-        false.must_exisit
+        false.must_exist
       end
 
       specify "nil #=> failure" do
         proc {
-          nil.must_exisit
+          nil.must_exist
         }.must_raise MiniTest::Assertion
       end
 
