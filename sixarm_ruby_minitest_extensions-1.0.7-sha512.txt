@@ -1,1 +1,0 @@
-00bd80ebd80f1b2d9e649472551a594b151b5612cd55d9d1027e8c52fcdea291f2c3b4e742e4d9f90f428aabf30ebeabfb6a5321faa0f7f35ef2d4e9243cef10  sixarm_ruby_minitest_extensions-1.0.7.gem
