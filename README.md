@@ -4,7 +4,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_minitest_extensions.svg)](http://badge.fury.io/rb/sixarm_ruby_minitest_extensions)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_minitest_extensions.png)](https://travis-ci.org/SixArm/sixarm_ruby_minitest_extensions)
-[![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_minitest_extensions.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_minitest_extensions)
+[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/$id/maintainability)](https://codeclimate.com/github/SixArm/$dir/maintainability)
 [![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_minitest_extensions/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_minitest_extensions?branch=master)
 
 * Git: <https://github.com/sixarm/sixarm_ruby_minitest_extensions>
