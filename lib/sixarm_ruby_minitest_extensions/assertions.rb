@@ -43,4 +43,12 @@ module Minitest::Assertions
     assert_equal items_1.sort_by(&:hash), items_2.sort_by(&:hash), msg
   end
 
+  ##
+  # Succeeds when +items_1+ and +items_2+ have all equal items,
+  # when calling +meth+, regardless of ordering of the items.
+
+  def assert_equal_items_by items_1, items_2, meth, msg = nil
+    assert_equal items_1.map{|x| x.send(meth) }, items_2.map{|x| x.send(meth) }, msg
+  end
+
 end

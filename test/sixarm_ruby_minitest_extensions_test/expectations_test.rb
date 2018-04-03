@@ -90,6 +90,37 @@ describe "Minitest" do
 
     end
 
+    describe "#must_have_equal_items_by" do
+
+      class C
+        attr_accessor :a, :b
+        def initialize(a: nil, b: nil)
+          self.a = a
+          self.b = b
+        end
+      end
+
+      describe "smoke test with some items" do
+
+        before do
+          @items_1 = [C.new(a: "alpha", b: "bravo_1")]
+          @items_2 = [C.new(a: "alpha", b: "bravo_2")]
+        end
+
+        it "works" do
+          expect(@items_1).must_have_equal_items_by @items_2, :a
+        end
+
+        it "fails" do
+          proc { 
+            expect(@items_1).must_have_equal_items_by @items_2, :b
+          }.must_raise MiniTest::Assertion
+        end
+
+      end
+
+    end
+
   end
 
 end
