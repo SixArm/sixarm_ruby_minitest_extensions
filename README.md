@@ -4,14 +4,13 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_minitest_extensions.svg)](http://badge.fury.io/rb/sixarm_ruby_minitest_extensions)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_minitest_extensions.png)](https://travis-ci.org/SixArm/sixarm_ruby_minitest_extensions)
-[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges//maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_minitest_extensions/maintainability)
-[![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_minitest_extensions/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_minitest_extensions?branch=master)
+[![Code Climate](https://api.codeclimate.com/v1/badges//maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_minitest_extensions/maintainability)
 
-* Git: <https://github.com/sixarm/sixarm_ruby_minitest_extensions>
+* Git: <https://github.com/SixArm/sixarm_ruby_minitest_extensions>
 * Doc: <http://sixarm.com/sixarm_ruby_minitest_extensions/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_minitest_extensions>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
-* Project: [Changes](CHANGES.md), [License](LICENSE.md), [Contributing](CONTRIBUTING.md).
+* Project: [changes](CHANGES.md), [license](LICENSE.md), [contributing](CONTRIBUTING.md).
 
 <!--header-shut-->
 
@@ -40,17 +39,19 @@ For docs go to <http://sixarm.com/sixarm_ruby_minitest_extensions/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--install-opent-->
+<!--install-open-->
 
 ## Install
 
 ### Gem
 
-Run this command in your shell or terminal:
+To install this gem in your shell or terminal:
 
     gem install sixarm_ruby_minitest_extensions
 
-Or add this to your Gemfile:
+### Gemfile
+
+To add this gem to your Gemfile:
 
     gem 'sixarm_ruby_minitest_extensions'
 
