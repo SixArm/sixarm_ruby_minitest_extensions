@@ -35,7 +35,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency('minitest', '>= 5.7.0', '< 6')
   s.add_development_dependency('rake', '> 9.4.2', '< 11')
   s.add_development_dependency('simplecov', '>= 0.10.0', '< 2')
-  s.add_development_dependency('coveralls', '>= 0.8.2', '< 2')
 
   s.required_ruby_version = ">= 2.2"
 
