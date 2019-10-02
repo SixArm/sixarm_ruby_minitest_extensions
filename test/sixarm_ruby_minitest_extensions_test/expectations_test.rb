@@ -7,12 +7,12 @@ describe "Minitest" do
     describe "#must_be_true" do
 
       specify "true #=> success" do
-        true.must_be_true
+        expect(true).must_be_true
       end
 
       specify "truthy but not true #=> failure" do
-        proc {
-          1.must_be_true
+        expect {
+          expect(1).must_be_true
         }.must_raise MiniTest::Assertion
       end
 
@@ -21,12 +21,12 @@ describe "Minitest" do
     describe "#must_be_false" do
 
       specify "false #=> success" do
-        false.must_be_false
+        expect(false).must_be_false
       end
 
       specify "falsey but not false #=> failure" do
-        proc {
-          nil.must_be_false
+        expect {
+          expect(nil).must_be_false
         }.must_raise MiniTest::Assertion
       end
 
@@ -35,20 +35,20 @@ describe "Minitest" do
     describe "#must_exist" do
 
       specify "true #=> success" do
-        true.must_exist
+        expect(true).must_exist
       end
 
       specify "false #=> success" do
-        false.must_exist
+        expect(false).must_exist
       end
 
       specify "0 #=> success" do
-        false.must_exist
+        expect(false).must_exist
       end
 
       specify "nil #=> failure" do
-        proc {
-          nil.must_exist
+        expect {
+          expect(nil).must_exist
         }.must_raise MiniTest::Assertion
       end
 
@@ -59,12 +59,12 @@ describe "Minitest" do
       describe "smoke test with some string methods" do
         
         it "works" do
-          "foo".must_respond_to_all [:upcase, :downcase, :swapcase]
+          expect("foo").must_respond_to_all [:upcase, :downcase, :swapcase]
         end
 
         it "fails" do
-          proc { 
-            "foo".must_respond_to_all [:upcase, :downcase, :INVALID]
+          expect { 
+            expect("foo").must_respond_to_all [:upcase, :downcase, :INVALID]
           }.must_raise MiniTest::Assertion
         end
 
@@ -77,12 +77,12 @@ describe "Minitest" do
       describe "smoke test with some items" do
         
         it "works" do
-          [:a, :b].must_have_equal_items [:b, :a]
+          expect([:a, :b]).must_have_equal_items [:b, :a]
         end
 
         it "fails" do
-          proc { 
-            [:a, :b].must_have_equal_items [:a, :z]
+          expect { 
+            expect([:a, :b]).must_have_equal_items [:a, :z]
           }.must_raise MiniTest::Assertion
         end
 
@@ -92,7 +92,7 @@ describe "Minitest" do
 
     describe "#must_have_equal_items_by" do
 
-      class C
+      class self::C
         attr_accessor :a, :b
         def initialize(a: nil, b: nil)
           self.a = a
@@ -103,8 +103,8 @@ describe "Minitest" do
       describe "smoke test with some items" do
 
         before do
-          @items_1 = [C.new(a: "alpha", b: "bravo_1")]
-          @items_2 = [C.new(a: "alpha", b: "bravo_2")]
+          @items_1 = [self.class::C.new(a: "alpha", b: "bravo_1")]
+          @items_2 = [self.class::C.new(a: "alpha", b: "bravo_2")]
         end
 
         it "works" do
@@ -112,7 +112,7 @@ describe "Minitest" do
         end
 
         it "fails" do
-          proc { 
+          expect { 
             expect(@items_1).must_have_equal_items_by @items_2, :b
           }.must_raise MiniTest::Assertion
         end

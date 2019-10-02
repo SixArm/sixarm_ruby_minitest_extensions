@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_minitest_extensions"
   s.summary        = "SixArm.com → Ruby → Minitest extensions"
   s.description    = "A few simple Minitest assertions and expectations"
-  s.version        = "1.1.1"
+  s.version        = "2.0.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -32,10 +32,10 @@ Gem::Specification.new do |s|
     "test/sixarm_ruby_minitest_extensions_test/expectations_test.rb",
   ]
 
-  s.add_development_dependency('minitest', '>= 5.7.0', '< 6')
-  s.add_development_dependency('rake', '> 9.4.2', '< 11')
-  s.add_development_dependency('simplecov', '>= 0.10.0', '< 2')
+  s.add_development_dependency("minitest", ">= 5.12.2", "< 6");
+  s.add_development_dependency("rake", ">= 13.0.0", "< 14");
+  s.add_development_dependency("simplecov", ">= 0.17.1", "< 2");
 
-  s.required_ruby_version = ">= 2.2"
+  s.required_ruby_version = ">= 2.5"
 
 end

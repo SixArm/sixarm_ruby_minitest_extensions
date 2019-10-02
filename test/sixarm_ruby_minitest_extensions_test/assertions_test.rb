@@ -11,7 +11,7 @@ describe "Minitest" do
       end
 
       specify "truthy but not true #=> failure" do
-        proc { 
+        expect { 
           assert_true(1)
         }.must_raise MiniTest::Assertion
       end
@@ -25,7 +25,7 @@ describe "Minitest" do
       end
 
       specify "falsey but not false #=> failure" do
-        proc { 
+        expect { 
           assert_false(nil)
         }.must_raise MiniTest::Assertion
       end
@@ -47,7 +47,7 @@ describe "Minitest" do
       end
 
       specify "nil #=> failure" do
-        proc { 
+        expect { 
           assert_exist(nil)
         }.must_raise MiniTest::Assertion
       end
@@ -63,7 +63,7 @@ describe "Minitest" do
         end
 
         it "fails" do
-          proc { 
+          expect { 
             assert_respond_to_all("foo", [:upcase, :downcase, :INVALID])
           }.must_raise MiniTest::Assertion
         end
@@ -81,7 +81,7 @@ describe "Minitest" do
         end
 
         it "fails" do
-          proc { 
+          expect { 
             assert_equal_items([:a, :b], [:a, :z])
           }.must_raise MiniTest::Assertion
         end
@@ -112,7 +112,7 @@ describe "Minitest" do
         end
 
         it "fails" do
-          proc { 
+          expect { 
             assert_equal_items_by(@items_1, @items_2, :b)
           }.must_raise MiniTest::Assertion
         end

@@ -1,0 +1,1 @@
+0b4dae6ba6af8f5cdeb89e2a8f8bed3835abe00ea9673c1514de7eb0ea75e994d4c3f7e04618f286b46c3b631d5db1e1f8efa660aeef886402e2fa388e89e1ea  sixarm_ruby_minitest_extensions-2.0.0.gem
