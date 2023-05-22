@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
     "test/sixarm_ruby_minitest_extensions_test/expectations_test.rb",
   ]
 
-  s.add_development_dependency("minitest", ">= 5.12.2", "< 6");
+  s.add_development_dependency("minitest", ">= 5.12", "< 6")
   s.add_development_dependency("rake", ">= 12.3.3", "< 13")
   s.add_development_dependency("simplecov", ">= 0.17.1", "< 2");
 
